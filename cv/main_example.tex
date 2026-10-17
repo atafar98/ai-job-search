@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Master CV - Rafael González Seliva
 %% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
+%% Use as a master reference when tailoring role-specific CVs with /apply.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -11,11 +10,6 @@
 \moderncvcolor{blue}
 
 % Force the name and section headings to render in moderncv blue (color1).
-% Default banking leaves them black: moderncvstylebanking.sty's \colorlet
-% copies (not aliases) the pre-scheme accent colour, so the name colours are
-% frozen before \moderncvcolor runs. Re-let them after. \namefont is the hook
-% every name-style macro routes through, so this also works on moderncv 2.3.1
-% (Debian/Ubuntu apt), which has no \firstnamestyle/\lastnamestyle at all.
 \renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
 \colorlet{firstnamecolor}{color1}
 \colorlet{lastnamecolor}{color1}
@@ -23,40 +17,25 @@
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
-% pdflatex fallback only (the documented engine is lualatex, which skips this
-% branch). Without T1 font encoding pdflatex builds accented letters with
-% \accent, and the PDF text layer stores them decomposed - `e` + U+0300 rather
-% than U+00E8 - so an ATS keyword match on "Genève" fails while the page looks
-% right. moderncv 2.5 loads T1 itself under pdflatex; 2.3.1 (Debian/Ubuntu apt)
-% does not. \ifpdftex comes from iftex, which every moderncv version loads.
 \ifpdftex\usepackage[T1]{fontenc}\fi
-% moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
-% must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
-% \usepackage{hyperref} clashes with the class's own
-% \RequirePackage[unicode]{hyperref}. From 2.4.0 the class passes its options
-% through \PassOptionsToPackage instead, which is what removes that clash.
 \AtEndPreamble{\hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
-    % Keep pdfpagemode=UseNone: this block runs after moderncv's own
-    % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
-    % value here would win and open every CV in fullscreen presentation mode.
+    pdftitle={Rafael González Seliva - CV},
     pdfpagemode=UseNone,
 }}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
-% personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+% Personal data
+\name{Rafael}{González Seliva}
+\address{Terrassa, Barcelona}{}{}
+\phone[mobile]{+34 677 420 408}
+\email{gonzalezselivarafael@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/rafael-gonzalez-seliva}{LinkedIn}}
 
 \begin{document}
 
@@ -67,25 +46,25 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Senior Frontend Developer con más de 6 años de experiencia en Angular, especializado en diseñar la arquitectura y liderar el desarrollo de aplicaciones en sectores como el aeronáutico, ferroviario, movilidad eléctrica y salud. Experiencia con Angular moderno (Signals, Zoneless), CI/CD, testing automatizado con Jest y Playwright, y librerías de componentes en Storybook. Integro la IA en el flujo de desarrollo con Claude Code, agentes, MCP y gestión de contexto.}
 
 % ============================================================
 %     CORE COMPETENCIES
 % ============================================================
 
-\section{Core Competencies}
+\section{Competencias Clave}
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Frontend Angular}: Angular (hasta v20), TypeScript, RxJS, HTML, SCSS, Signals, Zoneless, SSR, Standalone components, ChangeDetectionStrategy.OnPush, lazy loading
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Testing}: Playwright (e2e, Chrome DevTools Protocol), Jest, Jasmine, Karma — cobertura \>80\% en proyectos de producción
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Tooling \& CI/CD}: GitLab CI/CD, Jenkins, Docker, Nx, Storybook
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{IA aplicada al desarrollo}: Claude Code, agentes, MCP, gestión eficiente de contexto para automatizar flujos de desarrollo
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Cloud \& Backend}: AWS (S3, CloudFront, Lambda, EC2, DynamoDB); PHP, MySQL (experiencia inicial)
 
 \end{itemize}
 
@@ -93,36 +72,37 @@
 %     PROFESSIONAL EXPERIENCE
 % ============================================================
 
-\section{Professional Experience}
+\section{Experiencia Profesional}
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{abr 2023-Actualidad}{Desarrollador Frontend}{Circontrol}{Viladecavalls, Barcelona}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Diseñé la arquitectura y desarrollé varios proyectos para administrar instalaciones de cargadores de coches eléctricos con Angular 20, usando librerías gráficas como PrimeNG y Foblex.}
+    \item {Reduje los tiempos de carga de una aplicación en más de un 50\% al actualizar Angular y aplicar prácticas de sus guías de estilo: lazy loading, ChangeDetectionStrategy.OnPush, Zoneless y Signals.}
+    \item {Optimicé el rendimiento de un editor de diagramas interactivos (Foblex) de más de 1000 nodos: en tests de estrés automatizados con Playwright y Chrome DevTools Protocol, el tiempo de carga se redujo un 91\%, el DOM un 55\% y seleccionar un nodo pasó de 107 ms a menos de 1 ms.}
+    \item {Implanté pipelines CI/CD en GitLab con Docker, logrando un proceso de actualización un 30\% más rápido.}
+    \item {Integré Playwright y Jest para pruebas automatizadas, alcanzando más del 80\% de cobertura de tests unitarios.}
+    \item {Creé un documento que unifica las convenciones de desarrollo del equipo de frontend para aplicarlas de forma consistente a lo largo de los proyectos.}
+    \item {Implementé agentes de IA con Claude Code para automatizar flujos de desarrollo, optimizando el consumo de tokens mediante gestión eficiente del contexto.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{oct 2021-abr 2023}{Desarrollador Frontend}{Capgemini}{Barcelona}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {\textbf{Proyecto Airbus} (dic 2022 - abr 2023): Desarrollé una aplicación con Angular, integrando Jenkins para CI/CD y PrimeNG para la interfaz, siguiendo metodologías ágiles.}
+    \item {\textbf{Proyecto ADIF} (dic 2021 - dic 2022): Lideré un equipo frontend de 4-5 personas utilizando Angular Material como librería principal de componentes, mejorando la consistencia visual y reduciendo el tiempo de desarrollo.}
+    \item {\textbf{Proyecto Storybook interno} (oct - dic 2021): Desarrollé una librería de unos 50 componentes Angular en Storybook para varios proyectos internos, unificando la base de código y acelerando la entrega de productos.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{oct 2018-feb 2021}{Desarrollador Full Stack}{Aslogic}{Rubí, Barcelona}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Desarrollé aplicaciones web del ámbito sanitario usando jQuery, Angular, Bootstrap, PHP y MySQL.}
 \end{itemize}}}
 
 \end{itemize}
@@ -131,19 +111,15 @@
 %     EDUCATION
 % ============================================================
 
-\section{Education}
+\section{Educación}
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
+\item{\cventry{2017-2020}{CFGS Desarrollo de Aplicaciones Web}{INS Nicolau Copèrnic}{Terrassa, España}{}{}}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+\item{\cventry{2017-2019}{CFGS Desarrollo de Aplicaciones Multiplataforma}{INS Nicolau Copèrnic}{Terrassa, España}{}{}}
 
 \end{itemize}
 
@@ -151,40 +127,20 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 %     LANGUAGES
 % ============================================================
 
-\section{Languages}
+\section{Idiomas}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {Español (nativo), Catalán (nativo), Inglés (B2 certificado — Professional Working).}
 \end{itemize}
 
 % ============================================================
 %     REFERENCES
 % ============================================================
 
-\section{References}
+\section{Referencias}
 \vspace{1pt}
 \begin{itemize}
-\item{Available upon request.}
+\item{Disponibles a solicitud.}
 \end{itemize}
 
 \end{document}

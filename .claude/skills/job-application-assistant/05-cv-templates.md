@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Rafael González Seliva - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Rafael}{González Seliva}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Terrassa, Barcelona}{}{}
+\phone[mobile]{+34 677 420 408}
+\email{gonzalezselivarafael@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/rafael-gonzalez-seliva}{LinkedIn}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +137,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Senior Frontend Developer / Angular roles:**
+> Senior Frontend Developer con más de 6 años de experiencia en Angular, especializado en diseñar la arquitectura y liderar el desarrollo de aplicaciones en sectores como el aeronáutico, ferroviario, movilidad eléctrica y salud. Experiencia con Angular moderno (Signals, Zoneless), CI/CD, testing automatizado con Jest y Playwright, y librerías de componentes en Storybook. Integro la IA en el flujo de desarrollo con Claude Code, agentes, MCP y gestión de contexto.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Tech Lead / Frontend Architecture roles:**
+> Senior Frontend Developer con más de 6 años de experiencia liderando la arquitectura y el desarrollo de aplicaciones Angular en entornos de alto rendimiento. He dirigido equipos frontend, establecido convenciones de desarrollo y optimizado aplicaciones críticas — incluyendo una reducción del 91% en tiempos de carga de un editor de diagramas con más de 1000 nodos. Integro la IA en el flujo de desarrollo (Claude Code, MCP, agentes) para acelerar la entrega sin comprometer la calidad.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

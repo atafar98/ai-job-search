@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Rafael González Seliva
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Rafael González Seliva, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -16,76 +13,84 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Rafael González Seliva
+- **Location:** Terrassa, Barcelona, España
+- **Phone:** +34 677 420 408
+- **Email:** gonzalezselivarafael@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/rafael-gonzalez-seliva
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
+  | Español | Nativo |
+  | Catalán | Nativo |
+  | Inglés | B2 certificado (Professional Working) |
+  <!-- An undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
   lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
   04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **CV language:** Match posting language — use `documents/cv/Rafael-CV-en.pdf` (English) when the posting is in English; use `documents/cv/Rafael-CV.pdf` (Spanish) when the posting is in Spanish or another language. `/apply` should select the appropriate source CV accordingly.
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Empleado (Circontrol, actualmente)
+- **LinkedIn headline:** "Frontend Developer en Circontrol"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **CFGS Desarrollo de Aplicaciones Web** (2017-2020) - INS Nicolau Copèrnic, Terrassa
+- **CFGS Desarrollo de Aplicaciones Multiplataforma** (2017-2019) - INS Nicolau Copèrnic, Terrassa
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Desarrollador Frontend** (abr 2023 - Actualidad) - **Circontrol** (Viladecavalls, Barcelona)
+  - Diseñó la arquitectura y desarrolló proyectos de gestión de instalaciones de cargadores de VE con Angular 20, PrimeNG y Foblex
+  - Redujo tiempos de carga en un 50%+ mediante actualización de Angular (lazy loading, OnPush, Zoneless, Signals)
+  - Optimizó editor de diagramas Foblex (1000+ nodos): reducción del 91% en tiempo de carga, 55% en DOM, selección de nodo de 107ms a <1ms (tests con Playwright + Chrome DevTools Protocol)
+  - Implantó pipelines CI/CD en GitLab con Docker → 30% más rápido el proceso de actualización
+  - Integró Playwright + Jest: cobertura de tests unitarios >80%
+  - Creó documento de convenciones de desarrollo del equipo frontend
+  - Implementó agentes de IA con Claude Code para automatizar flujos de desarrollo
+
+- **Desarrollador Frontend** (oct 2021 - abr 2023) - **Capgemini** (Barcelona)
+  - Proyecto Airbus: Angular + Jenkins CI/CD + PrimeNG
+  - Proyecto ADIF: lideró equipo de 4-5 personas con Angular Material
+  - Proyecto Storybook interno: librería de ~50 componentes Angular
+
+- **Desarrollador Full Stack** (oct 2018 - feb 2021) - **Aslogic** (Rubí, Barcelona)
+  - Desarrollo full stack de aplicaciones web sanitarias (jQuery, Angular, Bootstrap, PHP, MySQL)
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Angular (hasta v20), TypeScript, RxJS, HTML, SCSS, Signals, Zoneless, SSR, Standalone components
+- **Secondary:** Playwright, Jest, Jasmine, Karma, GitLab CI/CD, Jenkins, Docker, Nx, Storybook, AWS (S3, CloudFront, Lambda, EC2, DynamoDB)
+- **Domain:** Frontend architecture, performance optimization, component library design, AI-assisted development
+- **Software:** PrimeNG, Angular Material, Foblex, MCP, Claude Code
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- Ninguna listada en documentos
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- Ninguna
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Ninguno
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Orientado a la arquitectura** - Diseña sistemas desde cero, no solo implementa features
+- **Obsesionado con el rendimiento** - Mide antes y después con benchmarks automatizados
+- **Documentador proactivo** - Crea convenciones y documentación sin que se lo pidan
+- **Strengths:** Profundidad técnica en Angular, testing, CI/CD, y uso criterioso de IA en el desarrollo
+- **Growth areas:** Backend depth (PHP/MySQL es de etapa temprana); inglés en contexto B2 — funcional pero no nativo
+- **Thrives in:** Entornos con autonomía para tomar decisiones de arquitectura, que valoren la calidad medible y donde se pueda liderar la adopción de buenas prácticas
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Seguir evolucionando en el perfil frontend con Angular y nuevas tecnologías web
+- Tener acceso a formación continua en áreas como frontend, IA, DevOps y backend
+- Trabajar en productos con impacto real (movilidad, infraestructura, salud, etc.)
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Tecnología / producto digital: empresas de software con producto propio
+- Movilidad eléctrica, aeronáutica, ferroviaria, salud: sectores con alta complejidad técnica
+- Consultoría tecnológica: proyectos con clientes de alto perfil (como Airbus, ADIF)
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Trabajo 100% presencial fuera de Terrassa (si es híbrido, debe ser en Barcelona y alrededores; si es presencial puro, solo Terrassa/Sabadell como máximo)
+- Salario bruto anual inferior a 48.000 €
+- Roles de mantenimiento puro sin mandato de arquitectura o mejora técnica
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

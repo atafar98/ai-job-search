@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Angular (up to v20), TypeScript, RxJS, Frontend architecture, Signals/Zoneless/SSR/Standalone, Performance optimization, Testing (Jest/Playwright/Jasmine/Karma), CI/CD (GitLab/Jenkins/Docker), Storybook, PrimeNG, Angular Material, Foblex
+**Moderate match areas:** AWS (S3, CloudFront, Lambda, EC2, DynamoDB), Nx monorepo, AI agent development (MCP, Claude Code, context management)
+**Weak match areas:** Pure backend (PHP/MySQL — early career, not current focus), mobile native development, DevOps/SRE, React/Vue/other frontend frameworks
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Senior Frontend Developer, Frontend Architect, Angular Developer, Frontend Tech Lead, Developer Experience (DX) Engineer
+**Moderate:** Full Stack Developer (frontend-heavy), Technical Consultant (frontend/web), Solutions Engineer (web), Frontend Team Lead
+**Entry-level:** Backend roles, DevOps/SRE, Mobile (React Native/Flutter)
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +107,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Consolidar y ampliar el perfil de arquitectura frontend con Angular (performance, Signals, Zoneless) en productos con impacto real
+- Ganar mandato explícito de liderazgo técnico (tech lead / referente de arquitectura), no solo ejecución
+- Ampliar formación en IA aplicada al desarrollo (agentes, Claude Code) y profundizar en backend/DevOps como áreas de crecimiento
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: diseñar arquitectura desde cero, optimizar rendimiento con benchmarks medibles, crear convenciones/documentación de equipo, introducir IA en el flujo de desarrollo
+- Tasks that drain: mantenimiento puro sin mandato de mejora, roles sin autonomía de decisión técnica
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Empleado actualmente (Circontrol) — no hay urgencia financiera; el cambio solo tiene sentido si mejora salario (mínimo 48.000 € brutos/año) o proyección de carrera
+- **Flexibility**: Prioriza trabajo remoto o híbrido en el área de Barcelona; presencial puro solo viable en Terrassa/Sabadell
+- **Professional development**: Busca acceso a formación continua (frontend, IA, DevOps, backend) y entornos que valoren la calidad medible
 
 ### 6. Salary Benchmark (Optional)
 

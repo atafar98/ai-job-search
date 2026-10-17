@@ -39,6 +39,58 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
+## STAR Candidates (Complete Manually)
+
+### Foblex diagram editor performance optimization
+**Source:** CV - Circontrol
+**What happened:** Optimized an interactive diagram editor (Foblex) handling 1000+ nodes using automated Playwright + Chrome DevTools Protocol stress tests; achieved 91% diagram load time reduction, 55% DOM reduction, node selection from 107ms to <1ms.
+**Why it matters:** "Tell me about a technical challenge you solved", "Biggest performance win", "How do you approach optimization", "Give me an example of going above and beyond"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Angular application load time reduction 50%+
+**Source:** CV - Circontrol
+**What happened:** Updated Angular and applied best practices from the style guide (lazy loading, OnPush, Zoneless, Signals) to cut application load times by more than half.
+**Why it matters:** "Modernizing a legacy codebase", "How do you keep up with framework evolution", "Process/performance improvement"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### ADIF frontend team lead (4-5 people)
+**Source:** CV + LinkedIn - Capgemini
+**What happened:** Led a frontend team of 4-5 developers building an application for ADIF (Spanish railway infrastructure manager) using Angular Material, improving visual consistency and reducing development time.
+**Why it matters:** "Leadership experience", "Managing a team", "Driving standards and consistency", "Stakeholder management"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### GitLab CI/CD pipeline implementation
+**Source:** CV - Circontrol
+**What happened:** Implemented CI/CD pipelines in GitLab with Docker, resulting in a 30% faster update/deployment process.
+**Why it matters:** "Process improvement", "DevOps experience", "How do you ensure deployment reliability", "Initiative outside your core role"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### 80%+ test coverage achievement
+**Source:** CV - Circontrol
+**What happened:** Integrated Playwright (e2e) and Jest (unit) into the development workflow and reached over 80% unit test coverage, improving stability and reducing reported bugs.
+**Why it matters:** "Engineering discipline", "Code quality philosophy", "How do you prevent regressions", "Testing culture"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"
